@@ -26,9 +26,9 @@ function App() {
     };
   }, []);
 
-  const defaultTitle = "Navbharat Niwas";
-  const defaultDescription = "Navbharat Niwas: Leading Contruction and Real Estate Company in India, specializing in Plot Sales, Construction, and Real Estate Development. Explore our innovative solutions for your construction needs.";
-  const siteUrl = "https://navbharatniwas.in/";
+  const defaultTitle = "Israel Pharma - Leading Pharmaceutical Solutions";
+  const defaultDescription = "Israel Pharma: Leading Pharmaceutical Solutions Provider. Explore our innovative products and services.";
+  const siteUrl = "https://israelpharma.in/";
 
   return (
     <HelmetProvider>
