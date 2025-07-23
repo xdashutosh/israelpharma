@@ -34,7 +34,7 @@ function ProductCard({ product }) {
     if (product.images.length <= 1) return;
     const timer = setTimeout(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % product.images.length);
-    }, 2000); // Changed to 2 seconds for a better viewing experience
+    }, 2000); 
     return () => clearTimeout(timer);
   }, [currentImageIndex, product.images.length]);
 
@@ -92,12 +92,14 @@ function ProductCard({ product }) {
       >
         <Card
           className="group h-full w-full overflow-hidden rounded-2xl bg-white dark:bg-slate-950 shadow-2xl shadow-slate-400/20 dark:shadow-black/50 border border-slate-200 dark:border-slate-800"
+          // --- FIX IS HERE ---
+          // We removed the hardcoded '--card-background' and now just use the variable,
+          // which is correctly set for light/dark mode in globals.css.
           style={{
             background: `radial-gradient(circle at ${mouseX.get() + 50}% ${mouseY.get() + 50}%, rgba(107, 114, 128, 0.15), transparent 50%), var(--card-background)`,
-            '--card-background': 'hsl(0 0% 100%)',
           }}
         >
-          <style>{`.dark .dark\\:bg-slate-950{ --card-background: hsl(222.2 47.4% 11.2%); }`}</style>
+          {/* --- FIX IS HERE --- We've removed the unnecessary <style> tag. */}
           
           <CardContent className="relative h-full w-full p-4 flex flex-col justify-between">
             <motion.div
@@ -157,7 +159,7 @@ export default function ProductSection() {
     const filteredProducts = allProducts.filter(p => p.category === activeFilter);
 
     return (
-        <section className="w-full py-16 md:py-24 bg-slate-50 dark:bg-slate-900" id="products">
+        <section className="w-full  py-16 md:py-24 bg-slate-50 dark:bg-slate-900" id="products">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
                      <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white">
@@ -169,8 +171,8 @@ export default function ProductSection() {
                 </div>
 
                 {/* --- NEW & IMPROVED FILTER TABS --- */}
-                <div className="flex justify-center mb-12">
-                  <div className="flex items-center space-x-1 sm:space-x-2 bg-slate-200/80 dark:bg-slate-800 p-2 rounded-full shadow-inner shadow-slate-300/50 dark:shadow-black/20">
+                <div  className="flex justify-center  mb-10">
+                  <div className="flex items-center space-x-1  sm:space-x-2 bg-slate-200/80 dark:bg-slate-800 p-2 rounded-full shadow-inner shadow-slate-300/50 dark:shadow-black/20">
                     {filters.map(filter => (
                       <button
                         key={filter}
