@@ -26,9 +26,9 @@ function App() {
     };
   }, []);
 
-  const defaultTitle = "Israel Pharma - Leading Pharmaceutical Solutions";
-  const defaultDescription = "Israel Pharma: Leading Pharmaceutical Solutions Provider. Explore our innovative products and services.";
-  const siteUrl = "https://israelpharma.in/";
+  const defaultTitle = "9 Meds Pharma - Leading Pharmaceutical Solutions";
+  const defaultDescription = "9 Meds Pharma: Leading Pharmaceutical Solutions Provider. Explore our innovative products and services.";
+  const siteUrl = "https://9 Medspharma.in/";
 
   return (
     <HelmetProvider>

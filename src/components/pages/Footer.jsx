@@ -12,11 +12,11 @@ export default function Footer() {
             <div className="flex items-center mb-4">
               <img 
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnj5_AAQUpx_XW_KnPQ3h1-n2RlE93vHTSCfuQ4D7d7k9-pwW_mtC7oivspaIoAtbWckQ&usqp=CAU" 
-                alt="Israel Pharma Logo" 
+                alt="9 Meds Pharma Logo" 
                 className="h-20 w-20 mr-2 object-contain rounded-full"
               />
               <span className="text-xl font-bold text-slate-800 dark:text-white">
-                Israel <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400">Pharma</span>
+                9 Meds <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400">Pharma</span>
               </span>
             </div>
             <p className="text-slate-600 dark:text-slate-400 text-sm max-w-sm mb-6">
@@ -83,7 +83,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between">
           <p className="text-sm text-slate-500 dark:text-slate-400 mb-4 sm:mb-0">
-            © {new Date().getFullYear()} Israel Pharma. All Rights Reserved.
+            © {new Date().getFullYear()} 9 Meds Pharma. All Rights Reserved.
           </p>
           <div className="flex space-x-3">
             <a href="#" aria-label="Twitter" className="group">

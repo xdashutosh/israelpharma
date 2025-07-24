@@ -87,12 +87,12 @@ export default function Header() {
               <div className="absolute inset-0 bg-white/20 rounded-full blur-sm group-hover:blur-none transition-all duration-300"></div>
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnj5_AAQUpx_XW_KnPQ3h1-n2RlE93vHTSCfuQ4D7d7k9-pwW_mtC7oivspaIoAtbWckQ&usqp=CAU"
-                alt="Israel Pharma Logo"
+                alt="9 Meds Pharma Logo"
                 className="relative h-14 w-14 object-contain drop-shadow-lg group-hover:scale-110 transition-transform duration-300 rounded-full bg-transparent"
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-xl text-white tracking-wide">Israel Pharma</span>
+              <span className="font-bold text-xl text-white tracking-wide">9 Meds Pharma</span>
               <span className="text-xs text-blue-100 font-medium">Advanced Healthcare Solutions</span>
             </div>
           </a>
